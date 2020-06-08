@@ -23,6 +23,8 @@ $container = get_theme_mod( 'understrap_container_type' );
 	<?php get_template_part( 'global-templates/hero' ); ?>
 <?php endif; ?>
 
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil vel molestias facere magni esse. Voluptate vero ea esse, minima accusamus numquam cumque voluptatibus quas blanditiis, iure necessitatibus dolore. Distinctio, possimus!
+
 <div class="wrapper" id="index-wrapper">
 
 	<div class="<?php echo esc_attr( $container ); ?>" id="content" tabindex="-1">

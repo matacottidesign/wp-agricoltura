@@ -1,1 +1,324 @@
-// This is an empty scss file for your custom styles - Please add your super duper awesome mega design styles here
+body{
+    padding: 0;
+    margin: 0;
+    background-color: $gray-100;
+    color: $dark;
+}
+
+.py-6 {
+    padding: 4rem 0;
+}
+.py-7 {
+    padding: 5.5rem 0;
+}
+.py-8 {
+    padding: 6rem 0;
+}
+
+.pt-6 {
+    padding-top: 4rem;
+}
+.pt-7 {
+    padding-top: 5.5rem;
+}
+.pt-8 {
+    padding-top: 6rem;
+}
+
+.pb-6 {
+    padding-bottom: 4rem;
+}
+.pb-7 {
+    padding-bottom: 5.5rem;
+}
+.pb-8 {
+    padding-bottom: 6rem;
+}
+
+h1{
+    color: $primary;
+    font-family: 'Chelsea Market', cursive;
+}
+h2{
+    color: $primary;
+    font-family: 'Chelsea Market', cursive;
+}
+h3{
+    color: $dark;
+    font-family: 'Chelsea Market', cursive;
+}
+h4{
+    color: $primary;
+    font-family: 'Chelsea Market', cursive;
+}
+h5{
+    color: $warning;
+    font-family: 'Chelsea Market', cursive;
+}
+h6{
+    color: $primary;
+    font-family: 'Chelsea Market', cursive;
+}
+
+a{
+    text-decoration: none !important;
+}
+
+.bordo-sm{
+    border-radius: 10px;
+}
+.bordo-md{
+    border-radius: 15px;
+}
+.bordo-lg{
+    border-radius: 20px;
+}
+
+p{
+    font-size: 20px;
+}
+
+//Navbar
+.img-fluid{
+    width: 90px !important;
+    height: 90px !important;
+}
+nav{
+    transition: 0.3s;
+}
+.navbar-brand{
+    font-family: 'Chelsea Market', cursive;
+}
+.nav-item{
+    transition: 0.3s;
+    padding: .25rem .5rem;
+
+    &.active{
+        background-color: $dark;
+    }
+
+    .nav-link{
+        color: $white !important;
+        text-transform: uppercase;
+    }
+}
+.nav-item:hover{
+    background-color: $gray-500;
+}
+.dropdown-menu{
+    background-color: $gray-100;
+    border: inherit;
+    box-shadow: 2px 5px 33px -2px rgba(0,0,0,.12);
+    transition: 0.3s;
+
+    .dropdown-item{
+        color: $dark;
+        transition: 0.3s;
+    }
+    .dropdown-item:hover{
+        background-color: $dark;
+    }
+}
+
+//Hero
+.hero-bg{
+    background-color: $yellow;
+    //background-image: linear-gradient(#ffc107, #ffa407);
+    background-image: linear-gradient($primary, #006333);
+
+    div{
+        div{
+            h1{
+                color: $warning;
+                font-size: 55px;
+            }
+        }
+    }
+}
+.hero-carousel{
+    height: 345px;
+    border: inherit;
+    box-shadow: 2px 5px 33px -2px rgba(0,0,0,.12);
+    transition: 0.3s;
+}
+.hero-carousel:hover{
+    box-shadow: 0 30px 60px -12px rgba(50,50,93,.15),0 18px 36px -18px rgba(0,0,0,.3),0 -12px 36px -8px rgba(0,0,0,.015);
+    -webkit-transform: translateY(-2px);
+    transform: translateY(-2px);
+}
+
+.area-riservata{
+    //background-color: $gray-100;
+    background-color: $white;
+    border: inherit;
+    box-shadow: 2px 5px 33px -2px rgba(0,0,0,.12);
+    transition: 0.3s;
+}
+.area-riservata:hover{
+    box-shadow: 0 30px 60px -12px rgba(50,50,93,.15),0 18px 36px -18px rgba(0,0,0,.3),0 -12px 36px -8px rgba(0,0,0,.015);
+    -webkit-transform: translateY(-2px);
+    transform: translateY(-2px);
+}
+.carousel-caption{
+    h5{
+        font-size: 35px;
+    }
+    p{
+        font-size: 25px;
+    }
+}
+
+
+//Lista news
+.widget-card{
+    background-image: linear-gradient($primary, #006333);
+    color: $white;
+    border: inherit;
+    box-shadow: 2px 5px 33px -2px rgba(0,0,0,.12);
+    transition: 0.3s;
+
+    h3{
+        color: $warning;
+    }
+
+    ul{
+        li{
+            a{
+                color: $gray-100;
+                font-size: 20px;
+                transition: 0.3s;
+            }
+            a:hover{
+                color: $warning;
+                text-decoration: inherit;
+            }
+        }
+    }
+}
+.widget-card:hover{
+    box-shadow: 0 30px 60px -12px rgba(50,50,93,.15),0 18px 36px -18px rgba(0,0,0,.3),0 -12px 36px -8px rgba(0,0,0,.015);
+    -webkit-transform: translateY(-2px);
+    transform: translateY(-2px);
+}
+
+.social-card{
+    font-size: 30px;
+    a{
+        color: $gray-100;
+        transition: 0.3s;
+    }
+    a:hover{
+        color: $warning;
+    }
+}
+
+.newsletter-card{
+    font-size: 30px;
+    color: $white;
+    background-color: $dark !important;
+    border: inherit;
+    box-shadow: 2px 5px 33px -2px rgba(0,0,0,.12);
+    transition: 0.3s;
+
+    div{
+        p{
+            margin-bottom: 0;;
+        }
+    }
+}
+.newsletter-card:hover{
+    color: $warning;
+    box-shadow: 0 30px 60px -12px rgba(50,50,93,.15),0 18px 36px -18px rgba(0,0,0,.3),0 -12px 36px -8px rgba(0,0,0,.015);
+    -webkit-transform: translateY(-2px);
+    transform: translateY(-2px);
+}
+
+.bg-categorie{
+    background-image: url("../img/bg-categorie.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.bg-news-card{
+    background-image: url("../img/bg-news-card.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bg-articoli-recenti{
+    background-image: url("../img/bg-articoli-recenti.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bg-link-utili{
+    background-image: url("../img/bg-link-utili.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.lista-link-utili{
+    h2{
+        color: $warning;
+    }
+
+    div{
+        h3{
+            color: $warning;
+        }
+
+        ul{
+            color: $gray-100;
+
+            li{
+                a{
+                    color: $gray-100;
+                    transition: 0.3s;
+                }
+                a:hover{
+                    color: $warning;
+                }
+            }
+        }
+    }
+}
+
+.card-text{
+    font-size: 20px;
+}
+
+
+//Footer
+footer{
+    background-color: $dark;
+
+    div{
+        color: $gray-100;
+
+        .row{
+            div{
+                h6{
+                    text-transform: uppercase;
+                }
+                .credits{
+                    text-transform: uppercase;
+                }
+                ul{
+                    li{
+                        a{
+                            text-transform: uppercase;
+                            color: $gray-100;
+                            transition: 0.3s;
+                        }
+                        a:hover{
+                            color: #178f10;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
