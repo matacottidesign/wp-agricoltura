@@ -11,46 +11,51 @@ defined( 'ABSPATH' ) || exit;
 
 <article <?php post_class(); ?> id="post-<?php the_ID(); ?>">
 
-	<header class="entry-header">
+	<div class="card area-riservata bg-news-card bordo-md p-3 mb-5">
 
-		<?php
-		the_title(
-			sprintf( '<h2 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ),
-			'</a></h2>'
-		);
-		?>
+		<!--Immagine in evidenza-->
+		<?php echo get_the_post_thumbnail( $post->ID, 'large w-100' ); ?>
 
-		<?php if ( 'post' == get_post_type() ) : ?>
+		<header class="entry-header">
 
-			<div class="entry-meta">
-				<?php understrap_posted_on(); ?>
-			</div><!-- .entry-meta -->
+			<?php
+			the_title(
+				sprintf( '<h3 class="card-title pt-5"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ),
+				'</a></h3>'
+			);
+			?>
 
-		<?php endif; ?>
+			<?php if ( 'post' == get_post_type() ) : ?>
 
-	</header><!-- .entry-header -->
+				<div class="entry-meta">
+					<?php understrap_posted_on(); ?>
+				</div><!-- .entry-meta -->
 
-	<?php echo get_the_post_thumbnail( $post->ID, 'large' ); ?>
+			<?php endif; ?>
 
-	<div class="entry-content">
+		</header><!-- .entry-header -->
 
-		<?php the_excerpt(); ?>
+		<div class="entry-content">
 
-		<?php
-		wp_link_pages(
-			array(
-				'before' => '<div class="page-links">' . __( 'Pages:', 'understrap' ),
-				'after'  => '</div>',
-			)
-		);
-		?>
+			<?php the_excerpt(); ?>
 
-	</div><!-- .entry-content -->
+			<?php
+			wp_link_pages(
+				array(
+					'before' => '<div class="page-links">' . __( 'Pages:', 'understrap' ),
+					'after'  => '</div>',
+				)
+			);
+			?>
 
-	<footer class="entry-footer">
+		</div><!-- .entry-content -->
 
-		<?php understrap_entry_footer(); ?>
+		<footer class="entry-footer">
 
-	</footer><!-- .entry-footer -->
+			<?php understrap_entry_footer(); ?>
+
+		</footer><!-- .entry-footer -->
+		
+	</div>
 
 </article><!-- #post-## -->
