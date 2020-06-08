@@ -52,25 +52,32 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 <?php wp_footer(); ?>
 
-  <!--Navbar Animation-->
+
   <script>
-    var prevScrollpos = window.pageYOffset;
-    window.onscroll = function () {
-    var currentScrollpos = window.pageYOffset;
 
-      if (prevScrollpos > currentScrollpos) {
-        //document.getElementsByTagName("nav")[0].style.backgroundColor = 'red';
-      } 
-      else {
-        document.getElementById("indice").style.boxShadow = '0px .5rem 1rem rgba(0,0,0,.15)';
-      }
+	  //Navbar Animation
+		var prevScrollpos = window.pageYOffset;
+		window.onscroll = function () {
+		var currentScrollpos = window.pageYOffset;
 
-      if(currentScrollpos === 0){
-        document.getElementById("indice").style.boxShadow = '0px .5rem 1rem rgba(255,255,255,0)';
-      }
+		if (prevScrollpos > currentScrollpos) {
+			//document.getElementsByTagName("nav")[0].style.backgroundColor = 'red';
+		} 
+		else {
+			document.getElementById("indice").style.boxShadow = '0px .5rem 1rem rgba(0,0,0,.15)';
+		}
 
-      prevScrollpos = currentScrollpos;
-    };
+		if(currentScrollpos === 0){
+			document.getElementById("indice").style.boxShadow = '0px .5rem 1rem rgba(255,255,255,0)';
+		}
+
+		prevScrollpos = currentScrollpos;
+		};
+		
+
+		//Rinomina widget Tag
+		document.getElementById("tag_cloud-2").firstChild.innerHTML = "Temi"; 
+		
   </script>
 
 </body>

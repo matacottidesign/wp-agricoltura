@@ -25,7 +25,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 
 
-<div class="margin-top: 116px;"></div>
+<div style="margin-top: 116px;"></div>
 
 
 <div class="hero-bg">

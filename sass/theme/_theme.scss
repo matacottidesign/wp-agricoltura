@@ -276,6 +276,19 @@ nav{
     transform: translateY(-2px);
 }
 
+.tagcloud{
+    display: block !important;
+    a{
+        color: $white;
+        margin-right: 1rem;
+        font-size: 20px !important;
+        transition: 0.3s;
+    }
+    a:hover{
+        color: $warning;
+    }
+}
+
 .bg-categorie{
     background-image: url("../img/bg-categorie.png");
     background-position: center;
