@@ -23,7 +23,24 @@ $container = get_theme_mod( 'understrap_container_type' );
 	<?php get_template_part( 'global-templates/hero' ); ?>
 <?php endif; ?>
 
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil vel molestias facere magni esse. Voluptate vero ea esse, minima accusamus numquam cumque voluptatibus quas blanditiis, iure necessitatibus dolore. Distinctio, possimus!
+
+
+<div class="margin-top: 116px;"></div>
+
+
+<div class="hero-bg">
+	<div class="container">
+		<div class="pb-8 pt-5">
+			
+			<div class="card bg-primary hero-carousel">
+			
+			<!--Carosello-->
+
+          	</div>
+			
+		</div>
+	</div>
+</div>
 
 <div class="wrapper" id="index-wrapper">
 

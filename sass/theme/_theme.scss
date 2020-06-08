@@ -160,6 +160,11 @@ nav{
     transform: translateY(-2px);
 }
 .carousel-caption{
+    position: unset;
+    padding-right: 110px;
+    padding-left: 110px;
+    padding-top: 100px;
+
     h5{
         font-size: 35px;
     }
@@ -283,8 +288,6 @@ nav{
     background-repeat: no-repeat;
     background-size: cover;
 }
-
-//widget_recent_entries
 
 .widget_recent_entries{
     background-image: url("<?php echo get_template_directory_uri(); ?>/../../img/bg-articoli-recenti.png");
