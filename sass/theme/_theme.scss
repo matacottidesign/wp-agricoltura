@@ -278,14 +278,16 @@ nav{
     background-size: cover;
 }
 .bg-news-card{
-    background-image: url("../img/bg-news-card.png");
+    background-image: url("<?php echo get_template_directory_uri(); ?>/../../img/bg-news-card.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-.bg-articoli-recenti{
-    background-image: url("../img/bg-articoli-recenti.png");
+//widget_recent_entries
+
+.widget_recent_entries{
+    background-image: url("<?php echo get_template_directory_uri(); ?>/../../img/bg-articoli-recenti.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;

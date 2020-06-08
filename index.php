@@ -34,6 +34,8 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil vel molestias fac
 			<!-- Do the left sidebar check and opens the primary div -->
 			<?php get_template_part( 'global-templates/left-sidebar-check' ); ?>
 
+			<h1 class="mb-5">News</h1>
+
 			<main class="site-main" id="main">
 
 				<?php if ( have_posts() ) : ?>
