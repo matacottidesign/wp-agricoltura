@@ -23,11 +23,6 @@ $container = get_theme_mod( 'understrap_container_type' );
 	<?php get_template_part( 'global-templates/hero' ); ?>
 <?php endif; ?>
 
-
-
-<div style="margin-top: 95px;"></div>
-
-
 <div class="hero-bg">
 	<div class="container">
 		<div class="pb-8 pt-5">
