@@ -292,8 +292,8 @@ nav{
     }
 }
 
-.bg-categorie{
-    background-image: url("../img/bg-categorie.png");
+.widget_categories{
+    background-image: url("<?php echo get_template_directory_uri(); ?>/../../img/bg-categorie.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
