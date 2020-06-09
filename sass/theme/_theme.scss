@@ -386,3 +386,14 @@ footer{
         }
     }
 }
+
+
+//CF7
+.wpcf7{
+    max-width: inherit !important;
+}
+.wpcf7-list-item{
+    margin: 0;
+    font-size: 14px;
+    color: $secondary;
+}

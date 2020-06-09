@@ -66,8 +66,8 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 				<div class="col-12 col-md-4">
 					<ul>
-						<li><a href="#">Privacy Policy</a></li>
-						<li><a href="#">Cookie Policy</a></li>
+						<li><a href="agricolturamoderna.it/privacy-policy/?preview_id=3&preview_nonce=f30ed7b54e&preview=true">Privacy Policy</a></li>
+						<li><a href="agricolturamoderna.it/cookie-policy/">Cookie Policy</a></li>
 					</ul>
 					<span>Made with <i class="fab fa-wordpress-simple"></i> and <i class="fas fa-heart"></i> by <a href="matacottidesign.it">Matacotti Design</a></span>
 				</div>
