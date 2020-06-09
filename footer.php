@@ -15,6 +15,33 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 <?php get_template_part( 'sidebar-templates/sidebar', 'footerfull' ); ?>
 
+<!-- Link utili -->
+<div class="bg-link-utili">
+    <div class="container py-8 lista-link-utili">
+      <h2 class="mb-5">Link utili</h2>
+      <div class="row row-link-utili">
+
+        <div class="col-6 col-md-6">
+          <ul>
+            <li><a href="https://www.uci.it/">Uci</a></li>
+            <li><a href="https://cafinforma.it/">Caf Uci</a></li>
+            <li><a href="https://www.patronatoenac.it/">Patronato Enac</a></li>
+            <li><a href="http://unapinforma.it/">Unap</a></li>
+          </ul>
+        </div>
+
+        <div class="col-6 col-md-6">
+          <ul>
+            <li><a href="https://turismouci.it/">Unaat</a></li>
+            <li><a href="http://formazione.anapia.it/">Anapia</a></li>
+            <li><a href="https://www.politicheagricole.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/202">Mipaaf</a></li>
+          </ul>
+        </div>
+        
+      </div>
+    </div>
+</div>
+
 <footer>
 	<div class="container py-8">
 		<div class="row">

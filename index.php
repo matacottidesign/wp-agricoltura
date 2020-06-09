@@ -25,7 +25,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 
 
-<div style="margin-top: 116px;"></div>
+<div style="margin-top: 95px;"></div>
 
 
 <div class="hero-bg">
@@ -33,8 +33,9 @@ $container = get_theme_mod( 'understrap_container_type' );
 		<div class="pb-8 pt-5">
 			
 			<div class="card bg-primary hero-carousel">
-			
-			<!--Carosello-->
+
+				<!--Carosello-->
+				<?php get_template_part('global-templates/carosello'); ?>
 
           	</div>
 			
