@@ -35,7 +35,8 @@ $container = get_theme_mod( 'understrap_container_type' );
 			<div class="card bg-primary hero-carousel">
 
 				<!--Carosello-->
-				<?php the_field('testo'); ?>
+                <?php //the_content(); ?>
+                <?php get_template_part( 'page-templates/custom' ); ?>
 
           	</div>
 			

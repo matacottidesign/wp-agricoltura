@@ -23,18 +23,18 @@ $container = get_theme_mod( 'understrap_container_type' );
 
         <div class="col-6 col-md-6">
           <ul>
-            <li><a href="https://www.uci.it/">Uci</a></li>
-            <li><a href="https://cafinforma.it/">Caf Uci</a></li>
-            <li><a href="https://www.patronatoenac.it/">Patronato Enac</a></li>
-            <li><a href="http://unapinforma.it/">Unap</a></li>
+            <li><a target="_blank" href="https://www.uci.it/">Uci</a></li>
+            <li><a target="_blank" href="https://cafinforma.it/">Caf Uci</a></li>
+            <li><a target="_blank" href="https://www.patronatoenac.it/">Patronato Enac</a></li>
+            <li><a target="_blank" href="http://unapinforma.it/">Unap</a></li>
           </ul>
         </div>
 
         <div class="col-6 col-md-6">
           <ul>
-            <li><a href="https://turismouci.it/">Unaat</a></li>
-            <li><a href="http://formazione.anapia.it/">Anapia</a></li>
-            <li><a href="https://www.politicheagricole.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/202">Mipaaf</a></li>
+            <li><a target="_blank" href="https://turismouci.it/">Unaat</a></li>
+            <li><a target="_blank" href="http://formazione.anapia.it/">Anapia</a></li>
+            <li><a target="_blank" href="https://www.politicheagricole.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/202">Mipaaf</a></li>
           </ul>
         </div>
         
