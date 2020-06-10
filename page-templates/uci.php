@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Contatti
+ * Template Name: Uci
  *
  * Template for displaying a page without sidebar even if a sidebar widget is published.
  *
@@ -23,7 +23,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 <div class="hero-bg">
     <div class="container">
         <div class="py-8">
-            <h1>Contatti</h1>
+            <h1>Unione Coltivatori Italiani</h1>
         </div>
     </div>
 </div>
@@ -40,9 +40,9 @@ $container = get_theme_mod( 'understrap_container_type' );
 			<?php get_template_part( 'global-templates/left-sidebar-check' ); ?>
 
 			<main class="site-main" id="main">
-          <div class="container">
-            <?php the_field('codice_contact_form'); ?>
-          </div>
+
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Et molestiae voluptate rerum alias enim dolorem autem repudiandae, a quisquam ad quo libero eos placeat nulla tempore inventore. Assumenda, dignissimos odit!
+
 			</main><!-- #main -->
 
 			<!-- Do the right sidebar check -->
