@@ -27,11 +27,10 @@ $container = get_theme_mod( 'understrap_container_type' );
 	<div class="container">
 		<div class="pb-8 pt-5">
 			
-			<div class="card bg-primary hero-carousel">
+			<div>
 
 				<!--Carosello-->
-                <?php //the_content(); ?>
-                <?php get_template_part( 'page-templates/custom' ); ?>
+                <?php echo do_shortcode('[sp_wpcarousel id="6654"]'); ?>
 
           	</div>
 			

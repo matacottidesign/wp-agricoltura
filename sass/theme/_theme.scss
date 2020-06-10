@@ -397,3 +397,27 @@ footer{
     font-size: 14px;
     color: $secondary;
 }
+
+//WP Slider
+.wpcp-carousel-wrapper{
+    padding: 2rem;
+    border-radius: 20px;
+    box-shadow: 2px 5px 33px -2px rgba(0,0,0,.12);
+    transition: 0.3s;
+}
+.wpcp-carousel-wrapper:hover{
+    box-shadow: 0 30px 60px -12px rgba(50,50,93,.15),0 18px 36px -18px rgba(0,0,0,.3),0 -12px 36px -8px rgba(0,0,0,.015);
+    -webkit-transform: translateY(-2px);
+    transform: translateY(-2px);
+}
+.wpcp-all-captions{
+    text-align: center;
+    
+    .wpcp-post-title{
+        font-size: 20px !important;
+        
+        a{
+            color: $white !important;
+        }
+    }
+}
