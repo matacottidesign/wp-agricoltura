@@ -41,7 +41,57 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 			<main class="site-main" id="main">
 
-				Lorem ipsum dolor sit amet consectetur adipisicing elit. Et molestiae voluptate rerum alias enim dolorem autem repudiandae, a quisquam ad quo libero eos placeat nulla tempore inventore. Assumenda, dignissimos odit!
+                <div class="embed-container">
+                    <?php the_field('video1'); ?>
+                </div>
+
+                <div class="pt-5">
+                    <?php the_field('intro'); ?>
+                </div>
+
+                <div class="pt-8">
+                    <h2><?php the_field('titolo'); ?></h2>
+
+                    <!--Start Carousel-->
+                    <?php if( have_rows('galleria') ) { ?>
+                    <?php
+                        $num = 0;
+                        $active = 'active';
+                    ?>
+                    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">   
+                        <div class="carousel-inner">  
+                            <?php $active = 'active'; ?>           
+                            <?php while( have_rows('galleria') ) : the_row() ;         
+                                $image 		= get_sub_field('immagini_uci');
+                            ?>           
+                            <div class="carousel-item <?php echo $active; ?>">
+                                <img class="d-block w-100" src="<?php echo $image['url'];  ?>" alt="<?php echo $image['alt'];  ?>">
+                            </div>                           
+                            <?php $active = ''; ?>                         
+                            <?php endwhile; ?>                     
+                        </div>
+                
+                        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>               
+                        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>                 
+                    </div>               
+                    <?php  } ?>
+                    <!--End Carousel-->
+
+                    <div class="pt-5">
+                        <?php the_field('descrizione'); ?>
+                    </div>
+
+                    <div class="embed-container">
+                        <?php the_field('video2'); ?>
+                    </div>  
+
+                </div>
 
 			</main><!-- #main -->
 
