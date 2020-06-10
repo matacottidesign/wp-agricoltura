@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Uci
+ * Template Name: Chi siamo
  *
  * Template for displaying a page without sidebar even if a sidebar widget is published.
  *
@@ -23,7 +23,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 <div class="hero-bg">
     <div class="container">
         <div class="py-8">
-            <h1>Unione Coltivatori Italiani</h1>
+            <h1>Chi siamo</h1>
         </div>
     </div>
 </div>
@@ -41,19 +41,42 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 			<main class="site-main" id="main">
 
-                <div class="embed-container">
-                    <?php the_field('video1'); ?>
-                </div>
+                <!--Cards-->
+                <h2><?php the_field('titolo_cards'); ?></h2>
+                <?php if( have_rows('cards') ): ?>
+                    <div class="row">
+                        <?php while( have_rows('cards') ): the_row(); 
 
-                <div class="pt-5">
-                    <?php the_field('intro'); ?>
-                </div>
+                            // vars
+                            $immagine = get_sub_field('immagine');
+                            $nome = get_sub_field('nome_cognome');
+                            $mansione = get_sub_field('mansione');
+                            ?>
 
+                            <div class="col-6 col-md-6">
+                                <div class="card area-riservata bg-news-card bordo-md mt-5">
+                                    <div class="d-flex justify-content-center align-items-center">
+                                        <img class="px-3 pt-3" src="<?php echo $immagine['url']; ?>" alt="<?php echo $immagine['alt'] ?>" />
+                                    </div>
+                                    <div class="card-body text-center">
+                                    <h5 style="color: #343a40 !important;" class="card-title"><?php echo $nome; ?></h5>
+                                    <h6 class="pb-4"><?php echo $mansione; ?></h6>
+                                    </div>
+                                </div>
+                            </div>
+
+                        <?php endwhile; ?>
+                    </div>
+                <?php endif; ?>
+
+
+                <!--Magazine-->
                 <div class="pt-8">
-                    <h2><?php the_field('titolo'); ?></h2>
+                    <h2><?php the_field('titolo_magazine'); ?></h2>
+                    <?php the_field('descrizione_magazine'); ?>
 
                     <!--Start Carousel-->
-                    <?php if( have_rows('galleria') ) { ?>
+                    <?php if( have_rows('galleria_magazine') ) { ?>
                     <?php
                         $num = 0;
                         $active = 'active';
@@ -61,8 +84,8 @@ $container = get_theme_mod( 'understrap_container_type' );
                     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-invetval="10000">   
                         <div class="carousel-inner">  
                             <?php $active = 'active'; ?>           
-                            <?php while( have_rows('galleria') ) : the_row() ;         
-                                $image 		= get_sub_field('immagini_uci');
+                            <?php while( have_rows('galleria_magazine') ) : the_row() ;         
+                                $image = get_sub_field('immagine_magazine');
                             ?>           
                             <div class="carousel-item <?php echo $active; ?>">
                                 <img class="d-block w-100" src="<?php echo $image['url'];  ?>" alt="<?php echo $image['alt'];  ?>">
